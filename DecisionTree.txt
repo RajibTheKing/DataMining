@@ -1,0 +1,72 @@
+
+First Split:
+----------------------------------------------------
+H(Risk Class) =  -(4/8)log2(4/8) -(4/8)log2(4/8) 
+              = 1
+
+(1-2): 3
+(2-7): 3
+(>7): 2
+
+IG(Time) = H(Risk Class) - H(Risk Class | Time)
+		 = 1             - (3/8)(0.918296) - (3/8)(0.918296) - 2/8(1)
+         = 0.061278
+
+m: 5
+F: 3
+IG(Gender) = H(Risk) -  H(Risk | Gender)
+           = 1       -  (5/8)(0.970951) - (3/8)(0.918296)
+           = 0.048794625
+
+IG(Area)   = H(Risk) - H(Risk | Area)
+           = 1       - 0.588125
+           = 0.5488125
+
+Area should be selected
+
+
+Second Split:
+---------------------------------------------------
+
+2	2-7	m	rural	high
+
+4	1-2	f	rural	high
+
+6	1-2	m	rural	high
+
+H(Risk | Rural) = 0.721928
+
+IG(Time) = H(Risk | Rural) - H(Risk|rural, TimeSlice)
+         = 0.721928        - 0 - 2/5 - 0
+         = 0.321928
+
+IG(Gender) = H(Risk | Rural) - H(Risk|rural, TimeSlice)
+         = 0.721928        - 0 - 2/5
+         = 0.321928
+
+Select any one, let's select Time Slice
+
+Third Split:
+---------------------------------------------------
+5	>7	m	rural	high
+3	>7	f	rural	low
+
+H(Risk | Rural, >7) = 1
+IG(Gender) = H(Risk | Rural, >7) - H(Risk | Rural, >7, Gender)
+           = 1                   
+           = 1
+
+                      Area
+                    /      \
+             rural /        \ urban
+                  /          \
+                 /           low
+        Time since license
+        /       |      \
+   1-2 /    2-7 |       \ >7
+      /         |        \
+    high       high     Gender
+                        /   \
+                     m /     \ f
+                      /       \
+                    high      low

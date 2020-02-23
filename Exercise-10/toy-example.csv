@@ -1,0 +1,24 @@
+ID,Gender,Height,Weight,Hair color,Blood group,Glasses,Smoking,Residential area
+67,female,175,60,brown,A,no,occasionally,quiet
+68,female,176,52,blond,AB,yes,occasionally,quiet
+69,female,176,63,black,A,yes,rarely,very quiet
+70,female,179,65,brown,0,yes,never,quiet
+71,female,180,62,brown,B,yes,never,quiet
+72,female,180,70,brown,A,yes,never,quiet
+73,female,185,72,brown,B,no,never,very quiet
+74,female,195,62,red,0,yes,regularly,very quiet
+75,female,203,52,red,AB,yes,regularly,very quiet
+76,male,165,53,brown,A,no,rarely,quiet
+77,male,169,63,brown,B,yes,rarely,quiet
+78,male,169,72,brown,A,no,no,quiet
+79,male,170,61,brown,A,no,never,very quiet
+80,male,171,71,brown,A,no,often,noisy
+81,male,173,61,black,A,yes,never,very quiet
+82,male,173,63,red,A,no,rarely,noisy
+83,male,173,67,brown,B,yes,never,quiet
+84,male,175,68,brown,,no,never,quiet
+85,male,175,71,brown,AB,no,often,quiet
+86,male,176,60,brown,A,no,rarely,quiet
+87,male,177,64,brown,AB,no,never,very noisy
+
+

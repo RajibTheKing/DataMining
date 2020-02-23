@@ -1,0 +1,42 @@
+Different Clustering Algorithms
+--------------------------------
+
+Partition Based: k-means, k-medoids, CLARANS.
+Hierarcical Based: Agnes, Diana, BIRCH, ROCK, CHAMELEON.
+Density Based: DBScan, OPTICS, DenClue.
+Grid Based: STING, WaveCluster, CLIQUE
+Model Based: EM, SOM, CobWeb
+Frequent Pattern Based: pCluster
+User-Guided or Constraint Based: COD(obstacles), constrained clustering.
+
+Single Link:
++ Can Handle non-elliptical shapes
+- Sensitive to noise and outliers
+- Chain like clusters
+
+Complete Link:
++ Less susceptible to noise and outliers
+- Tends to break large clusters
+- Biased towards spherical clusters
+
+
+Group Average: (Compromise between Single and Complete link)
++ Less susceptible to noise and outliers
+- Biased towards spherical cluster
+
+Hierarchical Method: Space complexity O(n*n), Time complexity O(n*n*n)
+
+DBScan : Worst Case O(n*n), O(nlgn) with kd-trees
++ Resistant to noise
++ Can handle clusters of different shapes and sizes
+- Problemetic for Varying Densities
+- Problemetic for High-dimensional data
+
+OPTICS:
++ Easy interpretation of clustering result
++ Allows (visually guided) cluster exploration.
++ Does not require the number of clusters to be known in advance
++ Computes a complete hierarchy of clusters
+
+
+
